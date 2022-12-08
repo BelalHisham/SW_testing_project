@@ -13,4 +13,4 @@ Feature: Book a Flight
     And Flight link is clicked
     And Air Philippines link is clicked
     And Book F Now button is clicked
-#    Then 'Flights Booking' should be shown F
+   Then 'Flights Booking' should be shown F

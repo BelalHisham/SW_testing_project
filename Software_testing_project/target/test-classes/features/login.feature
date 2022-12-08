@@ -18,16 +18,8 @@ Feature: Login page test
     And the Login button is clicked
     Then <msg> should appear
     Examples:
-      | email            | password    | msg
-      | 'wrongEmail'     | 'demoagent' | wrong email
-      |                  |             | wrong password
-
-
-
-#    log in ( with more than one case )
-#    Book a hotel
-#    Book a flight
-#    Book a Tour
-#    Book a trnsfer
-#    Update profile information
-#    Check your bookings or check your balance or check number of bookings
+      | email                | password    | msg
+      | 'wrongEmail'         | 'demoagent' | wrong email
+      | 'agent@phptravels.com| 'wrongPass' | wrong password
+      |                      | 'demoagent' | Please fill the email
+      | 'agent@phptravels.com|             | please fill the password

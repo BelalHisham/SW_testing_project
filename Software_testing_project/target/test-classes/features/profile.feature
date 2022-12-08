@@ -6,7 +6,8 @@ Feature: Update the profile
 
 
   Scenario Outline:
-    Given the Email is filled with <email>
+    Given the homepage is open
+    And the Email is filled with <email>
     And the Password is filled with <password>
     And the Login button is clicked
     And my profile link clicked
@@ -16,8 +17,10 @@ Feature: Update the profile
     And update profile button is clicked
     Then 'Profile updated successfully.' is shown
     Examples:
-      | email                  | password    |
-      | 'agent@phptravels.com' | 'demoagent' |
-      | 'someemail_test@email.com' | '123456789' |
+      | email                      | password      |
+      | 'agent@phptravels.com'     | 'demoagent'   |
+      | 'someemail_test@email.com' | '123456789'   |
+      | 'belalhisham@gmail.com'    | 'password123' |
+      | 'BelalYoussef@yahoo.com'   | 'wordpassword'|
 
 

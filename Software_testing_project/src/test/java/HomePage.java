@@ -47,9 +47,9 @@ public class HomePage {
 
     @FindBy (xpath = "/html/body/section[1]/div[3]/div/div[1]/div[1]/div[1]/div[2]/div[2]/div/div[2]/div/div[2]/form/div/div[5]/div/button")
     private WebElement book_now_button;
-//
-//    @FindBy (xpath = "//*[@id=\"fadein\"]/section[1]/div/div/div/div/div/div/h2")
-//    private WebElement hotel_booking_msg;
+
+    @FindBy (xpath = "//*[@id=\"fadein\"]/section[1]/div/div/div/div/div/div/h2")
+    private WebElement hotel_booking_msg;
 
 
 
@@ -133,9 +133,9 @@ public class HomePage {
     }
 
 
-//    public String getHotelBookingMsg() {
-//        return hotel_booking_msg.getText();
-//    }
+    public String getHotelBookingMsg() {
+        return hotel_booking_msg.getText();
+    }
 
 
     public void clickFlightLink(){

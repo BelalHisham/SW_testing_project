@@ -17,7 +17,7 @@ public class bookFlightStepDef extends StepDefs {
         homePage.clickBookFlightNow();
     }
 
-//    @Then("{string} should be shown F")
-//    public void flightsBookingShouldBeShownF() {
-//    }
+    @Then("{string} should be shown F")
+    public void flightsBookingShouldBeShownF() {
+    }
 }

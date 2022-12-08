@@ -19,8 +19,8 @@ public class bookHotelStepDef extends StepDefs  {
         homePage.clickBookNowButton();
     }
 
-//    @Then("{string} should be shown H")
-//    public void hotelBooking(String hotelMsg) {
-//        Assert.assertEquals(hotelMsg, homePage.getHotelBookingMsg());
-//    }
+    @Then("{string} should be shown H")
+    public void hotelBooking(String hotelMsg) {
+        Assert.assertEquals(hotelMsg, homePage.getHotelBookingMsg());
+    }
 }

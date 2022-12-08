@@ -18,6 +18,8 @@ Feature: Login page test
     And the Login button is clicked
     Then <msg> should appear
     Examples:
-      | email            | password    | msg
-      | 'wrongEmail'     | 'demoagent' | wrong email
-      |                  |             | wrong password
+      | email                | password    | msg
+      | 'wrongEmail'         | 'demoagent' | wrong email
+      | 'agent@phptravels.com| 'wrongPass' | wrong password
+      |                      | 'demoagent' | Please fill the email
+      | 'agent@phptravels.com|             | please fill the password
